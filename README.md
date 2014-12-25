@@ -5,7 +5,7 @@ Studio, Dress, Makeup price searcher with Node.js, Express.js(MVC), HTML, CSS
 
 This is a prototype for business Proof of Concepts implemented within 7 days by myself. 
 
-It strictly follwes the RESTful API spec.
+It strictly follows the RESTful API spec.
 
 
 **Back-end**
