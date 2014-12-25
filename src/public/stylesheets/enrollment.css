@@ -1,0 +1,146 @@
+/* Jquery mobile components */
+ui-listview-filter {
+    margin-bottom : 10px;
+}​
+
+.ui-header .ui-title {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.ui-header .ui-title {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.ui-btn-corner-all {
+	-moz-border-radius: 0em;
+	-webkit-border-radius: 0em;
+	border-radius: 0em;
+}
+
+.ui-corner-top {
+	-moz-border-radius-topleft: 0em;
+	-webkit-border-top-left-radius: 0em;
+	border-top-left-radius: 0em;
+	-moz-border-radius-topright: 0em;
+	-webkit-border-top-right-radius: 0em;
+	border-top-right-radius: 0em;
+}
+
+.ui-corner-bottom {
+	-moz-border-radius-bottomleft: 0em;
+	-webkit-border-bottom-left-radius: 0em;
+	border-bottom-left-radius: 0em;
+	-moz-border-radius-bottomright: 0em;
+	-webkit-border-bottom-right-radius: 0em;
+	border-bottom-right-radius: 0em;
+}
+
+.ui-corner-left {
+	border: 0px;
+	border-top-left-radius: 0em;
+	border-bottom-left-radius: 0em;
+}
+
+.ui-btn .ui-btn-inner {
+	border: 0px;
+	background-color: #3EDDC9;
+	color: white;
+	text-shadow: 0 0 0;
+}
+
+.ui-corner-right {
+	border: 0px;
+	border-top-right-radius: 0em;
+	border-bottom-right-radius: 0em;
+}
+
+.footer span {
+	background-color: #383838 !important;
+	color: white;
+	text-shadow: 0 0 0 !important;
+	height: 20px;
+	padding-top: 20px !important;
+	font-size: 14px;
+}
+
+.ui-body-c, .ui-overlay-c {
+	color: #333;
+	text-shadow: 0 0 0;
+	background: #f9f9f9;
+}
+
+.ui-shadow {
+	-moz-box-shadow: 0;
+	-webkit-box-shadow: 0 0 0 0;
+	box-shadow: 0 0 0 0;
+}
+
+
+.ui-controlgroup-horizontal .ui-btn {
+	margin-right: 1px;
+	margin-left: 1px;
+	border: 0px;
+}
+
+.ui-btn-block {
+	border: 0px;
+}
+
+/* Custom */
+#header {
+	background-color: #3EDDC9;
+	color: white;
+	text-shadow:0 0 0; 
+}
+
+#snap {
+	color: gray;
+}
+
+#content {
+	height: 100%;
+	background-color: #F6EAE1;
+}
+
+#content-inner {
+	padding: 5px;
+	background-color: white;
+}
+
+#studioName {
+	width: 90%;
+	margin: 5px;
+}
+
+#dressName {
+	width: 90%;
+	margin: 5px;
+}
+
+#makeupName {
+	width: 90%;
+	margin: 5px;
+}
+
+#snapName {
+	width: 90%;
+	margin: 5px;
+}
+
+#price {
+	width: 90%;
+	margin: 5px;
+}
+
+#extraInfo {
+	width: 90%;
+	margin: 5px;
+}
+
+#confirmCode {
+	width: 90%;
+	margin: 5px;
+}
+

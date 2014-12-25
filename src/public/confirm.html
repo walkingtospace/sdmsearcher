@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<script src="./javascripts/common/utilHandler.js" ></script>
+		<script src="./javascripts/common/uiHandler.js" ></script>
+		<script src="./javascripts/confirmHandler.js" ></script>
+		<link rel="stylesheet" href="./stylesheets/confirm.css">
+		<script>
+			$(document).ready(function(){	//init 
+				confirmHandler.getInfo(location.search);
+				uiHandler.init();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="mainPage" data-role="page">
+			<div id="header" data-role="header" data-theme="none" data-position="fixed">
+				<h1>스드메 견적 알려줘</h1>
+			</div>
+			<div id="content" data-role="content" data-theme="none">
+				<div id="content-inner">
+					<!-- <div id="buttonGroup" data-role="controlgroup" data-type="horizontal" >
+						<input id="sortByShop" type="button" data-inline="true" data-mini="true" value="같은 업체별" />
+						<input id="sortByDate" type="button" data-inline="true" data-mini="true" value="신규 등록순" />
+						<input id="sortByPrice" type="button" data-inline="true" data-mini="true" value="낮은 가격순" />
+					</div> -->
+					<br>
+					<div id="resultTitle">
+					<!-- 	<span><strong>서준스타일</strong>,</span>
+						<span><strong>에스테르</strong></span> 를 포함한 견적 
+						<strong id="resultNumber">37</strong>개 입니다. -->
+					</div>
+					<hr>
+					<!-- <div id="shopType">
+						<span id="studioType">■스튜디오</span>&nbsp;
+						<span id="dressType">■드레스샵</span>&nbsp;
+						<span id="makeupType">■메이크업샵</span>&nbsp;
+						<span id="bonsikType">■본식스냅</span>
+					</div>	 -->		
+					<div id="warning" class="ui-corner-none">
+						<h3>지금까지 총 3번 검색 하셨습니다.</h2>
+						더 많은 예신님들이 알 수 있도록 아래의 방법 중 하나로 <strong>인증</strong>한 뒤 계속 사용해 주세요. 
+					</div>
+					<div id="contentsList"  data-role="collapsible-set"  data-content-theme="d" data-inset="true" >
+						<div data-role="collapsible" data-iconpos="right">
+							<h2 data-collapsed="false" id="enrollBtn" >내가 받은 견적 등록하기</h2>
+						</div>
+						<div data-role="collapsible" data-iconpos="right">
+							<h2>Facebook에 가격검색기 공유하기</h2>
+							<ul>
+								<a id="facebookURL" href="#">페이스북에 댓글 달기</a>
+							</ul>
+						</div>
+						<div data-role="collapsible" data-iconpos="right">
+							<h2>레몬테라스 까페 글에 댓글 달기</h2>
+							<ul>
+								아래 링크로 들어가서 짧은 리뷰나 응원(?) 등을 댓글로 남겨주세요. (내용 무관!)
+								<a id="siteURL" href="#"></a>
+							</ul>
+						</div>
+					</div>
+					<a id="requestBtn" href="requestCode.html" data-role="button" data-theme="b">인증 코드 받기</a>
+					<hr>
+					<form id="submitForm" action="http://test.com/post/" method="POST">
+						<label for="confirmCode">이미 인증 코드를 받으셨다면 이 곳에 입력해 주세요</label>
+						<input type="text" name="confirmCode" id="confirmCode"  data-mini="true"/>
+						<input  id="submitCodeBtn" type="button" data-theme="b" value="확인"/>
+					</form>
+				</div>	
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a id="moveToIntro" class="footer" href="#">나는 누구? 여긴 어디?</a></li>
+						<li><a id="moveToEnrollment" class="footer" href="#">내 견적 등록하기</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

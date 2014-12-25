@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<script src="./javascripts/common/utilHandler.js" ></script>
+		<script src="./javascripts/common/uiHandler.js" ></script>
+		<script src="./javascripts/enrollHandler.js" ></script>
+		<link rel="stylesheet" href="./stylesheets/enrollment.css">
+		<script>
+			$(document).ready(function(){	//init 
+				uiHandler.init();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="mainPage" data-role="page">
+			<div id="header" data-role="header" data-theme="none" data-position="fixed">
+				<h1>스드메 견적 알려줘</h1>
+			</div>
+			<div id="content" data-role="content">
+				<div id="content-inner">
+					<div>
+						<h3>내 견적 등록하기</h3>
+						<hr>
+					</div>
+					<form id="submitForm" action="" method="POST">
+						<div data-role="fieldcontain" >
+							<label for="studioName">스튜디오 이름</label>
+							<input type="text" name="studioName" id="studioName"  data-mini="true" class="ui-corner-none" />
+						</div>
+						<div data-role="fieldcontain">
+							<label for="dressName">드레스샵 이름</label>
+							<input type="text" name="dressName" id="dressName"  data-mini="true" class="ui-corner-none" />
+						</div>
+						<div data-role="fieldcontain">
+							<label for="makeupName">메이크업 이름</label>
+							<input type="text" name="makeupName" id="makeupName"  data-mini="true" class="ui-corner-none" />
+						</div>
+						<div data-role="fieldcontain">
+							<label id="snap" for="snapName">스냅/원판 이름</label>
+							<input type="text" name="snapName" id="snapName"  data-mini="true" class="ui-corner-none" />
+						</div>
+						<div data-role="fieldcontain">
+							<label for="price">패키지 가격</label>
+							<input type="text" name="price" id="price"  data-mini="true" class="ui-corner-none"/>
+						</div>
+						<div data-role="fieldcontain">
+							<label for="extraInfo">특이사항</label>
+							<textarea name="" id="extraInfo" rows="" cols="" class="ui-corner-none" placeholder="포함된 서비스? 메이크업 원장급? 엘범 30p업글?"></textarea>
+						</div>
+						<div data-role="fieldcontain">
+							<label for="confirmCode">인증용 코드를 받을 카톡 ID를 알려주세요</label>
+							<input type="text" name="confirmCode" id="confirmCode"  data-mini="true" class="ui-corner-none"/>
+						</div>
+						<input id="submitBtn" type="button" value="견적 등록하기" />
+					</form>
+				</div>	
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a id="moveToIntro" class="footer" href="#">나는 누구? 여긴 어디?</a></li>
+						<li><a id="moveToEnrollment" class="footer" href="#">내 견적 등록하기</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

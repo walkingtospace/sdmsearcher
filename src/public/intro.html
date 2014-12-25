@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<script src="./javascripts/common/utilHandler.js" ></script>
+		<script src="./javascripts/common/uiHandler.js" ></script>
+		<script src="./javascripts/commentHandler.js" ></script>
+		<link rel="stylesheet" href="./stylesheets/intro.css">
+		<script>
+			$(document).ready(function(){	//init 
+				commentHandler.getList(location.search);
+				uiHandler.init();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="mainPage" data-role="page">
+			<div id="header" data-role="header" data-theme="none" data-position="fixed">
+				<h1>스드메 견적 알려줘</h1>
+			</div>
+			<div id="content" data-role="content" data-thema="e">
+				<div id="content-inner">
+					<h3>나는 누구</h3>
+					<hr>
+					<div id="introduction">
+						<span style="font-size: 12px;">예비 신랑이 되어&nbsp;예비신랑이 되어 예식홀, 스드메 등 남들도 하는 것들을 준비하는 동안..공대 출신이라 그런지 물건 살때 제대로 알 수 있는 게 별로 없다는 게 너무 답답했습니다.</span><span style="font-size: 12px;"><br><br></span><span style="font-size: 12px;">그래서 전공을 살려(?) 매우 간단한 스드메 가격 검색기를 만들어 봤습니다. 한참 준비하고 있을 때 저도 스드메 등급표를 봤었는데 먹고 사는 짓이 이쪽인지라 어떻게 하면 더 사용하기 간편하고, 항상 최신을 유지하며(3년 전 자료는 좀..), 많은 사람들에게 알릴 수 있을지 머리가 굴러가는 건 어쩔 수 없더라구요.</span><span style="font-size: 12px;"><br><br></span><span style="font-size: 12px;">그래서 만들었습니다.</span><span style="font-size: 12px;"><br><br></span><span style="font-size: 12px;">이런 쪽 아시는 분은 그렇게 어려운 작업 아니라는 거 아실테니 생색을 내긴 그렇구요. 대신 사용해서 얻어가신 만큼 여기저기 소문 많이 내주셔서 많이 써주시면 그걸로 족할 따름입니다. 견적이 충분히 많이 쌓이면 그걸 가지고 또 재미있는 기능들을 넣어보도록 하겠습니다. 좋은 아이디어나 고쳐야 할 점 있으면 편하게 이곳 댓글을 통해서 알려주세요 :)</span>
+					</div>
+					<hr>
+					<form id="submitForm" action="http://test.com/post/" method="POST">
+						<div class="ui-grid-b">
+							<div class="ui-block-a">
+								<label for="alias"></label>
+								<input type="text" name="alias" id="alias"  data-mini="true" class="ui-corner-none" placeholder="별명" />
+							</div>
+							<div class="ui-block-b"></div>
+							<div class="ui-block-c">
+								<input id="commentSubmitBtn" type="button" value="등록하기" data-theme="b" data-mini="true" data-inline="false" />
+							</div>
+						</div>
+						<div id="messageContainer">
+							<label for="message"></label>
+							<textarea name="message" id="message" rows="" cols="" class="ui-corner-none" ></textarea>
+						</div>
+					</form>
+					<ul id="postingList" data-role="listview" data-inset="true" data-theme="d" class="ui-corner-none"></ul>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+					<li><a id="moveToIntro" class="footer" href="#">나는 누구? 여긴 어디?</a></li>
+						<li><a id="moveToEnrollment" class="footer" href="#">내 견적 등록하기</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

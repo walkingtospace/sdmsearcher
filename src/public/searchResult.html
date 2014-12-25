@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<script src="./javascripts/common/utilHandler.js" ></script>
+		<script src="./javascripts/common/uiHandler.js" ></script>
+		<script src="./javascripts/searchHandler.js" ></script>
+		<link rel="stylesheet" href="./stylesheets/searchResult.css">
+		<script>
+			$(document).ready(function(){	//init 
+				searchHandler.searchResultInit(location.search);
+				uiHandler.init();
+			});
+		</script>
+	</head>
+	<body>		
+		<div id="mainPage" data-role="page">
+			<div id="header" data-role="header" data-theme="none" data-position="fixed">
+				<h1>스드메 견적 알려줘</h1>
+			</div>
+			<div id="content" data-role="content" data-theme="none">
+				<div id="content-inner">
+					<!-- <div id="buttonGroup" data-role="controlgroup" data-type="horizontal" >
+						<input id="sortByShop" type="button" data-inline="true" data-mini="true" value="같은 업체별" />
+						<input id="sortByDate" type="button" data-inline="true" data-mini="true" value="신규 등록순" />
+						<input id="sortByPrice" type="button" data-inline="true" data-mini="true" value="낮은 가격순" />
+					</div> -->
+					<br>
+					<div id="resultTitle">
+						<span><strong id="studioName"></strong>,</span>
+						<span><strong id="dressName"></strong>,</span> 
+						<span><strong id="makeupName"></strong></span> 견적은
+						<span><strong id="money"></strong></span> 만원 입니다.
+					</div>
+					<hr>
+					<!-- <div id="shopType">
+						<span id="studioType">■스튜디오</span>&nbsp;
+						<span id="dressType">■드레스샵</span>&nbsp;
+						<span id="makeupType">■메이크업샵</span>&nbsp;
+						<span id="bonsikType">■본식스냅</span>
+					</div>	 -->		
+					<br>
+					<div id="info"></div>
+					<!-- <ul id="resultList" data-role="listview" data-inset="true">
+						<li id="resultListItem" class="ui-corner-none">
+							<p id="resultListItemAside" class="ui-li-aside"></p>
+						</li>
+					</ul> -->
+					<br>
+					<a id="searchAgainBtn" type="button" data-theme="none" class="ui-corner-none" >다시 검색하기</a>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<div data-role="navbar" >
+					<ul>
+						<li><a id="moveToIntro" class="footer" href="#">나는 누구? 여긴 어디?</a></li>
+						<li><a id="moveToEnrollment" class="footer" href="#">내 견적 등록하기</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
