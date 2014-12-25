@@ -1,7 +1,7 @@
 SDM searcher
 ===========
 
-Studio, Dress, Makeup price searcher implemented in form of mobile web app with Node.js, Express.js(MVC), HTML, CSS
+A Studio, Dress, Makeup price search application implemented in form of mobile web app with Node.js, Express.js(MVC), HTML, CSS
 
 This is a prototype for business Proof of Concepts implemented within 7 days by myself. 
 
